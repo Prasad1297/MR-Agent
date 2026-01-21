@@ -40,7 +40,7 @@ st.title("💬 Market Intelligence Chatbot")
 st.markdown("Ask about market trends, competitors, and industry insights")
 
 # --- CONFIG ---
-WEBHOOK_URL = "http://127.0.0.1:5678/webhook/chat"
+WEBHOOK_URL = " https://henry-gimmicky-kacie.ngrok-free.dev/webhook/chat"
 
 # --- SESSION STATE ---
 if "messages" not in st.session_state:
@@ -115,4 +115,5 @@ with st.sidebar:
     st.markdown("### 🔧 Status")
     st.code(WEBHOOK_URL, language="plaintext")
     st.caption("✅ Ready to connect" if WEBHOOK_URL else "❌ No webhook configured")
+
 
